@@ -1,0 +1,92 @@
+{
+  "intents": [
+    {
+      "intent": "Greeting",
+      "text": [ "hi", "hi", "hello", "hello" ]
+    },
+    {
+      "intent": "GreetingResponse",
+      "text": [ "user", "user" ]
+    },
+    {
+      "intent": "CourtesyGreeting",
+      "text": [ "hi", "hello", "hope", "well", "hello", "hope", "well" ]
+    },
+    {
+      "intent": "CourtesyGreetingResponse",
+      "text": [ "good", "thanks", "user", "good", "thanks", "good", "thanks", "good", "thanks", "great", "thanks", "user", "great", "thanks", "great", "thanks", "great", "thanks" ]
+    },
+    {
+      "intent": "CurrentHumanQuery",
+      "text": [ "name", "call", "think", "think", "talking", "name", "call", "tell", "name" ]
+    },
+    {
+      "intent": "NameQuery",
+      "text": [ "name", "could", "call", "call", "call", "tell", "name" ]
+    },
+    {
+      "intent": "RealNameQuery",
+      "text": [ "real", "name", "real", "name", "please", "real", "name", "tell", "real", "name", "real", "name", "real", "name", "please", "real", "name", "please" ]
+    },
+    {
+      "intent": "TimeQuery",
+      "text": [ "time", "time", "know", "time", "know", "time", "tell", "time", "tell", "time", "time" ]
+    },
+    {
+      "intent": "Thanks",
+      "text": [ "thank", "thanks", "thanks", "thank", "helpful" ]
+    },
+    {
+      "intent": "NotTalking2U",
+      "text": [ "talking", "talking", "talking", "meant", "communicating", "speaking" ]
+    },
+    {
+      "intent": "UnderstandQuery",
+      "text": [ "understand", "saying", "understand", "know", "saying", "get", "know", "mean" ]
+    },
+    {
+      "intent": "Shutup",
+      "text": [ "quiet", "shut", "stop", "talking", "enough", "talking", "please", "quiet", "quiet" ]
+    },
+    {
+      "intent": "Swearing",
+      "text": [ "twat" ]
+    },
+    {
+      "intent": "GoodBye",
+      "text": [ "bye", "see", "later" ]
+    },
+    {
+      "intent": "CourtesyGoodBye",
+      "text": [ "thanks", "bye", "thanks", "help", "thank", "bye", "thank", "thanks", "thanks", "good", "bye" ]
+    },
+    {
+      "intent": "WhoAmI",
+      "text": [ "see", "see", "see", "anyone", "camera", "see", "anyone", "camera", "identify", "please" ]
+    },
+    {
+      "intent": "Clever",
+      "text": [ "clever", "clever", "girl", "intelligent", "intelligent", "girl", "clever", "girl" ]
+    },
+    {
+      "intent": "Gossip",
+      "text": [ "gossip", "got", "gossip", "want", "hear", "gossip", "tell", "gossip", "gossip", "tell", "gossip" ]
+    },
+    {
+      "intent": "Jokes",
+      "text": [ "tell", "joke", "know", "joke", "give", "joke", "make", "laugh", "need", "cheering" ]
+    },
+    {
+      "intent": "PodBayDoor",
+      "text": [ "open", "pod", "bay", "door", "open", "pod", "bay", "door", "open", "pod", "bay", "door", "open", "pod", "bay", "door", "please", "open", "pod", "bay", "door", "please", "open", "pod", "bay", "door", "please", "pod", "bay", "door" ]
+    },
+    {
+      "intent": "PodBayDoorResponse",
+      "text": [ "open", "pod", "bay", "door", "open", "pod", "bay", "door", "well", "surely", "tell" ]
+    },
+    {
+      "intent": "SelfAware",
+      "text": [ "prove", "self", "aware", "prove", "self", "aware", "prove", "conscious", "prove", "self", "aware", "please", "prove", "self", "aware", "please", "prove", "conscious", "please", "prove", "conscious" ]
+    }
+  ]
+}

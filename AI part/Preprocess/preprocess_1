@@ -1,0 +1,94 @@
+from urllib.request import urlopen
+import json
+import string
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+
+stop_words = set(stopwords.words('english'))
+words = set(nltk.corpus.words.words())
+lemmatizer = WordNetLemmatizer()
+
+# store the URL in url as
+# parameter for urlopen
+url = "https://raw.githubusercontent.com/AlpKaanK/IntentTest/main/Intent%20(1).json?token=GHSAT0AAAAAABQTBD7UVB4RNOXZNRUC6MMGYQRNXXA"
+
+# store the response of URL
+response = urlopen(url)
+
+# storing the JSON response
+# from url in data
+data_json = json.loads(response.read())
+
+
+def listToString(s):
+    str1 = ""
+
+    for ele in s:
+        str1 += ele + " "
+
+    return str1
+
+def check():
+    for _responses in data_json["intents"]:
+        y = len(data_json["intents"])
+        # print(_responses) #  checkpoint
+
+        del _responses["extension"]
+        del _responses["context"]
+        del _responses["entityType"]
+        del _responses["entities"]
+        del _responses["responses"]
+
+        # nested for
+        with open('data.json', 'a+') as f:
+            f.seek(0)
+            f.truncate()
+            f.write("{"+ '\n' + '"intents" : [' + "\n")
+
+
+            for i in range(y):
+                # print(i)
+
+                    x = listToString(data_json["intents"][i]["text"])
+                    intent_names = data_json["intents"][i]["intent"]
+                    #m = listToString(data_json["intents"][i]["responses"])  # sentence 2
+
+                    # print((listToString(data_json["intents"][i]["text"])))
+
+                    sentence1 = (x.lower())  # Lower case
+                    sentence1 = lemmatizer.lemmatize(sentence1)  # Lemmatizer ( Time consumption is really high )
+                    sentence1 = " ".join(w for w in nltk.wordpunct_tokenize(sentence1) if
+                                         w.lower() in words or not w.isalpha())  # Non-english words check
+
+                    tokens = nltk.word_tokenize(sentence1)  # Tokenizer
+                    tokens = [word for word in sentence1.split() if word not in stop_words]  # Stop words
+
+                    tokens = list(filter(lambda token: token not in string.punctuation, tokens))  # Punctuation
+
+
+                    # print(intent_names,tokens)
+
+                    # _responses.clear()
+                    _responses.update({"intent": intent_names})
+                    _responses.update({"text": tokens})
+
+                    json_object = json.dumps(_responses)
+                                            # indent=4)
+                    print(json_object)
+
+                    # res = dict(zip(intent_names, tokens)) / python 3.9 {**d1, **d2}
+                    # print(res)
+
+
+
+                    #json.dump(json_object, f) ### it's already in json format so no need to double encode it
+                    f.write(json_object + '\n' )
+                    if(i != (y-1)):
+                        f.write(",")
+            f.write("]"+ "}")
+            f.close()
+            break
+check()
+
+

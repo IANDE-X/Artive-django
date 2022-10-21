@@ -1,0 +1,44 @@
+from urllib.request import urlopen
+import json
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/AlpKaanK/IntentTest/main/data.json?token=GHSAT0AAAAAABQTBD7U5ILDHDHAQUX72O4MYQXRPAA"
+
+# store the response of URL
+response = urlopen(url)
+
+# storing the JSON response
+# from url in data
+data_json = json.loads(response.read())
+
+def listToString(s):
+    str1 = ""
+
+    for ele in s:
+        str1 += ele + " "
+
+    return str1
+
+def check():
+    for _responses in data_json["intents"]:
+        y = len(data_json["intents"])
+
+        for i in range(y):
+            # print(i)
+
+            x = listToString(data_json["intents"][i]["text"])
+            #intent_names = data_json["intents"][i]["intent"]
+            bowA = x.split(" ")
+            bowA.pop()
+            #print(bowA)
+            wordSet = set(bowA)
+            wordDictA = dict.fromkeys(wordSet, 0)
+            for word in bowA:
+                wordDictA[word] += 1
+            print(wordDictA)
+            #pd.DataFrame([wordDictA])
+        break
+check()
+
+
+

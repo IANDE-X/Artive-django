@@ -1,0 +1,443 @@
+{
+"intents" : [
+{
+    "intent": "Greeting",
+    "text": [
+        "hi",
+        "hi",
+        "hello",
+        "hello"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "GreetingResponse",
+    "text": [
+        "user",
+        "user"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "CourtesyGreeting",
+    "text": [
+        "hi",
+        "hello",
+        "hope",
+        "well",
+        "hello",
+        "hope",
+        "well"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "CourtesyGreetingResponse",
+    "text": [
+        "good",
+        "thanks",
+        "user",
+        "good",
+        "thanks",
+        "good",
+        "thanks",
+        "good",
+        "thanks",
+        "great",
+        "thanks",
+        "user",
+        "great",
+        "thanks",
+        "great",
+        "thanks",
+        "great",
+        "thanks"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "CurrentHumanQuery",
+    "text": [
+        "name",
+        "call",
+        "think",
+        "think",
+        "talking",
+        "name",
+        "call",
+        "tell",
+        "name"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "NameQuery",
+    "text": [
+        "name",
+        "could",
+        "call",
+        "call",
+        "call",
+        "tell",
+        "name"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "RealNameQuery",
+    "text": [
+        "real",
+        "name",
+        "real",
+        "name",
+        "please",
+        "real",
+        "name",
+        "tell",
+        "real",
+        "name",
+        "real",
+        "name",
+        "real",
+        "name",
+        "please",
+        "real",
+        "name",
+        "please"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "TimeQuery",
+    "text": [
+        "time",
+        "time",
+        "know",
+        "time",
+        "know",
+        "time",
+        "tell",
+        "time",
+        "tell",
+        "time",
+        "time"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "Thanks",
+    "text": [
+        "thank",
+        "thanks",
+        "thanks",
+        "thank",
+        "helpful"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "NotTalking2U",
+    "text": [
+        "talking",
+        "talking",
+        "talking",
+        "meant",
+        "communicating",
+        "speaking"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "UnderstandQuery",
+    "text": [
+        "understand",
+        "saying",
+        "understand",
+        "know",
+        "saying",
+        "get",
+        "know",
+        "mean"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "Shutup",
+    "text": [
+        "quiet",
+        "shut",
+        "stop",
+        "talking",
+        "enough",
+        "talking",
+        "please",
+        "quiet",
+        "quiet"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "Swearing",
+    "text": [
+        "twat"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "GoodBye",
+    "text": [
+        "bye",
+        "see",
+        "later"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "CourtesyGoodBye",
+    "text": [
+        "thanks",
+        "bye",
+        "thanks",
+        "help",
+        "thank",
+        "bye",
+        "thank",
+        "thanks",
+        "thanks",
+        "good",
+        "bye"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "WhoAmI",
+    "text": [
+        "see",
+        "see",
+        "see",
+        "anyone",
+        "camera",
+        "see",
+        "anyone",
+        "camera",
+        "identify",
+        "please"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "Clever",
+    "text": [
+        "clever",
+        "clever",
+        "girl",
+        "intelligent",
+        "intelligent",
+        "girl",
+        "clever",
+        "girl"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "Gossip",
+    "text": [
+        "gossip",
+        "got",
+        "gossip",
+        "want",
+        "hear",
+        "gossip",
+        "tell",
+        "gossip",
+        "gossip",
+        "tell",
+        "gossip"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "Jokes",
+    "text": [
+        "tell",
+        "joke",
+        "know",
+        "joke",
+        "give",
+        "joke",
+        "make",
+        "laugh",
+        "need",
+        "cheering"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "PodBayDoor",
+    "text": [
+        "open",
+        "pod",
+        "bay",
+        "door",
+        "open",
+        "pod",
+        "bay",
+        "door",
+        "open",
+        "pod",
+        "bay",
+        "door",
+        "open",
+        "pod",
+        "bay",
+        "door",
+        "please",
+        "open",
+        "pod",
+        "bay",
+        "door",
+        "please",
+        "open",
+        "pod",
+        "bay",
+        "door",
+        "please",
+        "pod",
+        "bay",
+        "door"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "PodBayDoorResponse",
+    "text": [
+        "open",
+        "pod",
+        "bay",
+        "door",
+        "open",
+        "pod",
+        "bay",
+        "door",
+        "well",
+        "surely",
+        "tell"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+,{
+    "intent": "SelfAware",
+    "text": [
+        "prove",
+        "self",
+        "aware",
+        "prove",
+        "self",
+        "aware",
+        "prove",
+        "conscious",
+        "prove",
+        "self",
+        "aware",
+        "please",
+        "prove",
+        "self",
+        "aware",
+        "please",
+        "prove",
+        "conscious",
+        "please",
+        "prove",
+        "conscious"
+    ],
+    "responses": [
+        "Hi human, please tell me your GeniSys user",
+        "Hello human, please tell me your GeniSys user",
+        "Hola human, please tell me your GeniSys user"
+    ]
+}
+]}
